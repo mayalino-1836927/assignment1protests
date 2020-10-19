@@ -32,7 +32,7 @@ At this point, you should open up your `analysis.R` script to begin working with
 
 - What does the difference between the mean and the median tell you about the *distribution* of the data?
 
-It tells me that the number of people attending these protests vary greatly by each event.
+It tells me that the number of people attending these protests vary greatly by each event. There are events that have 
 - Does the number of protests in Washington surprise you? Why or why not?
 
 The number of protests surprise me in the sense that 
