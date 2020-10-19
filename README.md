@@ -32,16 +32,16 @@ At this point, you should open up your `analysis.R` script to begin working with
 
 - What does the difference between the mean and the median tell you about the *distribution* of the data?
 
-It tells me that the number of people attending these protests vary greatly by each event. There are events that have 
+It tells me that the number of people attending these protests vary greatly by each event. There are events that will have greater than a thousand people and some that will have less than 100.
 - Does the number of protests in Washington surprise you? Why or why not?
 
-The number of protests surprise me in the sense that 
+The number of protests do not surprise me in the sense that the timeline being analyzed is an era of political unrest and increased political participation in the US, but I also did not expect for there to be so many more protests from before 2020/at the beginning of the data set. 
 - Looking at the `state_table` variable, what data quality issues do you notice, and how would you use that to change your analysis (no need to actually change your analysis)?
 
-I do notice that some 
+I do notice that some locations in the given data set have more detailed information (one plot included specific locations suc as "University of Washington", or "Golden Gate Bridge", while some just stated "Fargo, MN", etc). I think to address these issues I would have to use the String function to detect anomalies.
 - Does the change in the number of protests from 2019 to 2020 surprise you? Why or why not?
 
-It does not surprise me, since many events have ocurred in between those dates that have caused people to take to the streets. 
+It does not surprise me, since many events have ocurred in between those dates that have caused people to take to the streets. In between those dates there has been a global pandemic, an increased consciousness for civil rights, and growing tensions in the country in general.
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
 
 Breonna's Law: 
@@ -49,17 +49,17 @@ Breonna's Law:
 repeal on part of Civil Rights, Law Section 50-a: 
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
 
-I see that 
+I see that there are many more Civil Rights, Racial Injustice, and Gun rights protests than any other purpose. This, when put into context the history of the US, paints a picture of its libertarian ideals and its relationship with race.
 
 ## Final Thoughts
 When you are finished, with your analysis, please answer the following questions in 1-2 sentences each.
 
 - What about the analysis surprised you?
 
-The analysis 
+The analysis is not easy for me to decipher, but it surprises me that the protests in the US can range from issues of a principal getting fired, to criminal justice reforms.
 - What parts of this analysis did you find challenging?
 
-I found it challenging to work with the data frames in R; 
+I found it challenging to work with the data frames in R, as well as analyzing the plots. 
 - What types of analysis do you wish you were able to do with the dataset, but currently don't have the technical skills to do?
 
-I wish I could have 
+I wish I could have made some sort of ranking of the highest number of attendees to each issue, but I found that at a certain point the data will just state "NA". I also would have liked to have done some sort of sentiment analysis with the articles linked in the data, but I do not have either the technical skills nor the planning and timeframe for it.
