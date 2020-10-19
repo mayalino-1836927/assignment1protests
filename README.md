@@ -41,7 +41,7 @@ The number of protests surprise me in the sense that
 I do notice that some 
 - Does the change in the number of protests from 2019 to 2020 surprise you? Why or why not?
 
-It does not surprise me, since 
+It does not surprise me, since many events have ocurred in between those dates that have caused people to take to the streets. 
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
 
 Breonna's Law: 
@@ -59,7 +59,7 @@ When you are finished, with your analysis, please answer the following questions
 The analysis 
 - What parts of this analysis did you find challenging?
 
-I found it challengin to work with the data frames in R; 
+I found it challenging to work with the data frames in R; 
 - What types of analysis do you wish you were able to do with the dataset, but currently don't have the technical skills to do?
 
 I wish I could have 
