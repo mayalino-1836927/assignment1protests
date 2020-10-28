@@ -108,7 +108,7 @@ minneapolis_summary <- count_in_location("Minneapolis")
 # Create a new vector `states` which is the last two characters of each 
 # value in the `locations` vector. Hint, you may want to again use the 
 # `stringr` package
-states <- str_dup(locations, c(-2, -1))
+states <- str_sub(locations, -2, -1)
 
 # Create a vector of the unique states in your dataset. `uniq_states`
 uniq_states <- length(unique(states))
@@ -156,10 +156,10 @@ earliest <- min(dates)
 time_span <- earliest - most_recent
 
 # Create a vector of the dates that are in 2020 `in_2020`
-in_2020 <- c(dates, str_detect("2020"))
+in_2020 <- dates[dates >= as.Date("2020-01-01")]
 
 # Create a vector of the dates that are in 2019. `in_2019`
-in_2019 <- c(dates, str_detect("2019"))
+in_2019 <- dates[dates >= as.Date("2019-01-01") & dates < as.Date("2020-01-01")]
 
 # What is the ratio of the number of protests in 2020 comparted to 2019?
 # `ratio_2020_2019`
@@ -182,11 +182,11 @@ count_on_date <- function(date) {
 
 # Using your function you just wrote, how many protests were there on 
 # May 24th, 2020? `num_may_24`
-num_may_24 <- count_on_date("2020/06/24")
+num_may_24 <- count_on_date("2020/05/24")
 
 # Using your function you just wrote, how many protests were there on 
 # May 31th, 2020? `num_on_may_31`
-num_on_may_31 <- count_on_date("2020/06/31")
+num_on_may_31 <- count_on_date("2020/05/31")
 
 # For more on this timeline, see: 
 # https://www.nytimes.com/article/george-floyd-protests-timeline.html
@@ -201,9 +201,9 @@ by_month_table <- table(months(dates))
 # What is the *difference* in the number of protests between July 2020 and 
 # July 2019? You'll want to do this in multiple steps as you see fit, though
 # your answer should be stored in the variable `change_july_protests`.
-july_2019 <- by_month_table$"2019-07"
-july_2020 <- by_month_table$"2020-07"
-change_july_protests <- july_2019 - july_2020
+july_2019 <- by_month_table$"2019/07"
+july_2020 <- by_month_table$"2020/07"
+change_july_protests <- july_2020 - july_2019
 
 # Reflection: do a bit of research. Find at least *two specific policies* that
 # have been changed as a result of protests in 2020. These may be at the
@@ -229,9 +229,9 @@ num_purposes <- length(unique(purpose))
 # before the first parenthasis. 
 # Hint: this will take a little bit of googling // trial and error. Be patient!
 if (str_detect(purpose, " (",  FALSE)) {
-  high_level_purpose <- purpose$str_detect(purpose, c(1, ))
+  high_level_purpose <- gsub(purpose, c(1, ))
 } else {
-  high_level_purpose <- purpose$str_detect(purpose, c(0, ))
+  high_level_purpose <- gsub(purpose, c(0, ))
 }
   
 # How many "high level" purposes have you identified? `num_high_level`
